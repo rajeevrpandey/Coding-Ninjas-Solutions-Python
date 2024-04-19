@@ -1,0 +1,83 @@
+Problem statement
+What will be the output of following code?
+
+a = 14
+def f():
+    a=12
+f()
+print(a)
+
+
+ANS:
+14
+
+============================================
+
+Problem statement
+What will be the output of following code?
+
+a=14
+def f():
+    global a
+    a=12
+f()
+print(a)
+
+ANS:
+12
+
+============================================
+
+Problem statement
+What will be the output of following code?
+
+a = 14
+def f():
+    a = 12
+    return a
+a = f()
+print(a)
+
+ANS:
+12
+
+============================================
+
+Problem statement
+What will the output of the following code?
+
+def function(a,b,c=1):
+    return a+b-c
+value = function(10,12)
+print(value)
+
+ANS:
+21
+
+============================================
+
+Problem statement
+What will the output of the following code?
+
+def function(a,b,c=1):
+    return a+b-c
+value = function(10,12,5)
+print(value)
+
+ANS:
+17
+
+============================================
+
+Problem statement
+What will the output of the following code?
+
+def function(a,b,c=1,d=5):
+    return a+b+c+d
+value = function(1,2,d=7)
+print(value)
+
+ANS:
+11
+
+============================================
