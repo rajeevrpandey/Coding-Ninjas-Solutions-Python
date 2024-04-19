@@ -28,4 +28,6 @@ elif age<=12:
 elif age<=17:
     print("Adolescents 15")
 elif age<=64:
-
+    print("Adults 20")
+else:
+    print("Seniors 15")
