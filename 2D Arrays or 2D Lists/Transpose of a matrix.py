@@ -67,4 +67,8 @@ from typing import List
 def transpose(m: int, n: int, mat: List[List[int]]) -> List[List[int]]:
     newmat = [[0 for i in range(m)]for j in range(n)]
     for i in range(m):
+        for j in range(n):
+            newmat[j][i] = mat[i][j]
+
+    return newmat
 
