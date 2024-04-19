@@ -30,4 +30,26 @@ def secondLargestElement(arr, n):
     for i in arr:
         if i>first:
             second = first
+            first = i
+        elif i>second:
+            second = i
+    return second
+
+    
+
+
+
+def takeInput() :
+    n = int(stdin.readline().rstrip())
+    if n != 0:
+        arr = list(map(int, stdin.readline().rstrip().split(" ")))
+        return arr, n
+
+    return list(), 0
+
+
+#main
+arr, n = takeInput()
+print(secondLargestElement(arr, n))
+
 
