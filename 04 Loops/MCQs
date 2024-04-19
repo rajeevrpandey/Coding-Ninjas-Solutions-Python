@@ -1,0 +1,115 @@
+Problem statement
+What will be the output of following code segment?
+
+i=0
+while i<10:
+print(i)
+i=i+1
+
+
+ANS:
+Indentation Error
+
+======================================
+
+Problem statement
+What will be the output of following code segment?
+
+i=0
+while i<10:
+    print(i)
+i = i+1
+
+
+ANS:
+Infinite times 0 will be printed
+
+======================================
+
+Problem statement
+What will be the output of following code segment?
+
+i=0
+while i<10:
+    print(i)
+    i= i+1
+
+
+ANS:
+Numbers from 0 to 9 will be printed
+
+======================================
+
+Problem statement
+What will be the output of following code?
+
+i=1
+while i<5:
+    if i==3:
+        break
+    print(i,end=" ")
+    i = i +1
+
+
+ANS:
+1 2
+
+======================================
+
+Problem statement
+What will be the output of following code?
+
+i=1
+while i<5:
+    if i == 6:
+        break
+    print(i,end=" ")
+    i = i + 1
+else:
+    print(“Else is also printed”);
+
+
+ANS:
+1 2 3 4 Else is also printed
+
+======================================
+
+Problem statement
+What will be the output of the following code?
+
+i=1
+while i<5:
+    if i==3:
+            continue
+    print(i, end=" ")
+    i = i + 1
+
+
+ANS:
+1 2...(Infinte Loop)
+
+======================================
+
+Problem statement
+What will be the output of following code?
+
+for i in range(1,10,2):
+        print(i, end=' ')
+
+
+ANS:
+1 3 5 7 9
+
+======================================
+
+Problem statement
+What will be the output of following code?
+
+for i in range(5):
+    print(i, end= ' ')
+
+
+ANS:
+0 1 2 3 4
+
+======================================
