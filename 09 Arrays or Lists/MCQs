@@ -1,0 +1,111 @@
+What is an array ?
+
+
+ANS:
+A built-in data structure to store a colection of elements of the same data type.
+
+====================================================
+
+Problem statement
+You have an array of integers with a base address of 1000. If each integer occupies 4 bytes in memory, what is the address of the 5th element in the array?
+
+ANS:
+1016
+
+====================================================
+
+Problem statement
+import array 
+
+a = array.array('i',[1,2,3,4,5])
+
+a.append(10)
+
+a.append(20)
+
+a.pop(3)
+
+a.pop()
+
+print(a)
+
+
+ANS:
+array('i', [1, 2, 3, 5, 10])
+
+====================================================
+
+How are Python lists typically managed in memory?
+
+ANS:
+Lists are generated in memory only when accessed, and they do not occupy continuous memory space.
+
+====================================================
+
+Problem statement
+What will be the output of following code?
+
+li =['abcd', 'def']
+li.insert(4,5)
+print(li)
+
+ANS:
+['abcd', 'def', 5]
+
+====================================================
+
+Problem statement
+What will be the output of following code?
+
+li = [‘abcd’,5,’def’,5]
+li.remove(5)
+print(li)
+
+ANS:
+['abcd', 'def', 5]
+
+====================================================
+
+Problem statement
+What will be the output of code if following input is provided to the code below?
+
+Input:
+
+5
+1
+2 
+3 
+4 
+5
+Code:
+
+n = int(input())
+li = []
+for i in range(n):
+    li.append(input())
+print(li)
+
+ANS:
+['1', '2', '3', '4', '5']
+
+====================================================
+
+Problem statement
+What will be the output of following code?
+
+li = [1,2,3,4,5]
+for i in li[1:4]:
+    print(i,end= “ “)
+
+ANS:
+2 3 4
+
+====================================================
+
+Problem statement
+what syntax should you use to extract elements from a list using slicing in reverse order?
+
+ANS:
+list[start:end:-1]
+
+====================================================
