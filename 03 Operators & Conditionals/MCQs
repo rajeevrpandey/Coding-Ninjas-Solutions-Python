@@ -1,0 +1,93 @@
+Problem statement
+What is the value of x after executing the following code:
+
+x = 5
+x += 3
+
+ANS:
+8
+
+=========================================
+
+Problem statement
+a = 20
+print(a >= 20)
+
+ANS:
+True
+
+=========================================
+
+Problem statement
+Which of the following logical operators in Python returns True if at least one of the operands is True?
+
+ANS:
+or
+
+=========================================
+
+Problem statement
+a = 20
+b = 10
+print(a >= 20 and b <= 20)
+
+ANS:
+True
+
+=========================================
+
+Problem statement
+Which bitwise operator is used to flip all bits?
+
+ANS:
+~
+
+=========================================
+
+Problem statement
+What is the result of the expression 9 ^ 3 using the bitwise XOR operator?
+
+ANS:
+10
+
+=========================================
+
+Problem statement
+What is the result of the expression 2 ** 3 // 2 in Python?
+
+ANS:
+4
+
+=========================================
+
+Problem statement
+What will the following code segment print?
+
+x = 15
+if x <= 15:
+    print("Inside if")
+else:
+    print("Inside else")
+
+ANS:
+Inside If
+
+=========================================
+
+Problem statement
+Output of the following program will be :
+
+    n = 10
+    if n>0 and n<=10:
+        print("too low")
+    elif n>10 and n<=20:
+        print("medium")
+    elif n>20 and n<=30:
+        print("large")
+    else:
+        print("too large")
+
+ANS:
+too low
+
+=========================================
