@@ -1,0 +1,78 @@
+Problem statement
+What will be the output of the given code segment?
+
+a = 10 
+b = 20 
+print("a",b)
+
+ANS: 
+a 20
+
+==========================================
+
+Problem statement
+What will be the output of the given code segment?
+
+a,b,c = 10,20 
+print(c)
+
+ANS: 
+Error
+
+==========================================
+
+Problem statement
+Can a variable name start with a number in Python?
+
+ANS: 
+No
+
+==========================================
+
+Problem statement
+Which of the following is not a valid variable name in Python?
+
+ANS: 
+2ndUser
+total%count
+
+==========================================
+
+Problem statement
+What is the Data type of "x" after the code executes?
+
+x = "abcd"
+x = 10
+
+
+ANS: 
+Int
+
+==========================================
+
+Problem statement
+What is a literal in Python?
+
+ANS: 
+A constant value used in the program
+
+==========================================
+
+Problem statement
+Which of the following is the default data type of the value returned by the input() function?
+
+ANS: 
+str
+
+==========================================
+
+Problem statement
+What will be the output of the given code segment?
+
+x= "abc"
+print(x*3)
+
+ANS: 
+abcabcabc
+
+==========================================
