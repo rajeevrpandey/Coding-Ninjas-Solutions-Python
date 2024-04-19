@@ -1,0 +1,117 @@
+
+Problem statement
+What will the output of following code?
+
+s="abcd"
+s[0]='c'
+print(s) 
+
+
+ANS:
+Error
+====================================================
+
+Problem statement
+What will be the output of following code?
+
+s = “abcd”
+a = “abcd”
+if id(s) == id(a):
+    print(“They are same”)
+else:
+    print(“They are not same”)
+
+
+ANS:
+They are same
+====================================================
+
+Problem statement
+What will the output of the following code?
+
+s = "abcd"
+b = s + "ef"
+print(s)
+
+
+ANS:
+abcd
+====================================================
+
+Problem statement
+What will the output of following code?
+
+s = "abcd"
+b = s + 2
+print(b)
+
+
+ANS:
+Error
+====================================================
+
+Problem statement
+What will be the output of the following code?
+
+s = "abcdef"
+print (s[2:])
+
+
+ANS:
+cdef
+====================================================
+
+Problem statement
+What will be the output of the following code?
+
+s = "abcdef"
+print (s[4:2:-1])
+
+
+ANS:
+ed
+====================================================
+
+Problem statement
+What will be the output of following code?
+
+s = “abcd”
+print(s[-2])
+
+
+ANS:
+c
+====================================================
+
+Problem statement
+What will be the output of the following code?
+
+a = "abcdef" == "abcd"
+print(a)
+
+
+ANS:
+False
+====================================================
+
+Problem statement
+What will be output of the following code?
+
+a = "abcdef" >= "abcd"
+print(a)
+
+
+ANS:
+True
+====================================================
+
+Problem statement
+What will be output of the following code?
+
+a = "abce" >= "abcdef"
+print(a)
+
+
+ANS:
+True
+====================================================
