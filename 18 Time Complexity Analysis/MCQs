@@ -1,0 +1,164 @@
+
+Problem statement
+Two main measures for the efficiency of an algorithm are -
+
+ANS: Time and space
+
+=======================================
+
+Problem statement
+In theoretical analysis of an algorithm, the time complexity is measured by
+
+ANS: Counting the number of unit operations
+
+=======================================
+
+Problem statement
+If the number of primary operations of an algorithm that takes an array of size n as input are 3n^2 + 5n. The worst case time complexity of the algorithm will be ?
+
+ANS: O(n^2)
+
+=======================================
+
+Problem statement
+The worst case time complexity of Linear search is :
+
+ANS: O(n)
+
+=======================================
+
+Problem statement
+Worst case time complexity of insertion sort is ?
+
+ANS: O(N^2)
+
+=======================================
+
+Problem statement
+Worst case time complexity of Selection sort is ?
+
+ANS: O(N^2)
+
+=======================================
+
+Problem statement
+What will be the Time Complexity of following code in terms of ‘n’ ?
+
+Note : Assume k to be a constant value
+Refer the code in C++ -
+
+  for(int i = 0; i < n; i++){
+     for(int j = 1 ; j < k; j++){
+        cout << (i + j ) << endl;
+      }
+  }
+Refer the same code in Java -
+
+for(int i = 0; i < n; i++){
+       for(int j = 1 ; j < k; j++){
+         System.out.println(i + j);
+       }
+}
+Refer the same code in Python -
+
+for i in range(n):
+    for j in range(k):
+        print(i+j)
+
+
+ANS: O(n)
+
+=======================================
+
+Problem statement
+What will be the Time Complexity of following code in terms of ‘n’ ’?
+
+for(int i = 0; i < n ; i++){
+    int k = n;
+    while(k > 0){
+           k/=2;   
+    }
+}
+Same code is Python is:
+
+for i in range(n):
+    k=n
+    while k>0:
+        k //= 2
+
+ANS: O(nlogn)
+
+=======================================
+
+Problem statement
+What will be the Time Complexity of following code in terms of ‘n’ ?
+
+while(n > 0){
+  n = n / 4;
+}
+Same code in Python is
+
+while n>0:
+    n = n//4
+
+ANS: O(logn to the base 4)
+
+=======================================
+
+Problem statement
+What is the time complexity of following recursive code ?
+
+def multiplyRec(m, n):
+    if n==1:
+        return m
+    return m + multiplyRec(m,  n - 1)
+
+ANS: O(n)
+
+=======================================
+
+Problem statement
+What is the time complexity of following recursive code ?
+
+def sumOfDigits(n):
+    if n < 10:
+        return n
+    sum = (n % 10) + sumOfDigits(n//10)
+    return sum
+
+ANS: O(logn to the base 10)
+
+=======================================
+
+Problem statement
+What is the recurrence relation for merge sort :
+
+ANS: T(n) = 2T(n/2) + O(n)
+
+=======================================
+
+Problem statement
+For merging two sorted arrays of size m and n into a sorted array of size m+n, we require operations -
+
+ANS: O(m+n)
+
+=======================================
+
+Problem statement
+What is the time complexity of merge sort :
+
+ANS: O(nlogn)
+
+=======================================
+
+Problem statement
+What is the time complexity of following recursive code ?
+
+def fib(n): 
+    if n == 0 or n == 1:
+    return n
+return fib(n - 1) + fib(n - 2)
+
+ANS: O(2^n)
+
+=======================================
