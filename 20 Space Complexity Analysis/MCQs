@@ -1,0 +1,22 @@
+What is the space complexity of following recursive code ?
+
+def multiplyRec(m, n):
+    if n==1:
+        return m
+    return m + multiplyRec(m,  n - 1)
+
+ANS: O(n)
+
+=============================================
+Problem statement
+The space complexity for merge sort is :
+
+ANS: O(n)
+
+=============================================
+Problem statement
+The space complexity for finding nth fibonacci number using recursion is :
+
+ANS: O(n)
+
+=============================================
