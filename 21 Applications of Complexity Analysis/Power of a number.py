@@ -22,8 +22,10 @@ def power(x, n):
     if n ==0:
         return 1
     SmallPower = power(x,n//2)
-    SmallPower*SmallPower
-    return x**n
+    if n%2==0:
+        return SmallPower*SmallPower
+    else:
+        return SmallPower*SmallPower*x
 
 # Main
 from sys import setrecursionlimit
