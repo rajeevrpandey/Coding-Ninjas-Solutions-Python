@@ -1,0 +1,163 @@
+Problem statement
+What is the primary goal of Object-Oriented Programming (OOP)?
+
+ANS: Code Reusablity
+
+==============================================
+Problem statement
+What is a class in python?
+
+ANS: A class is a blueprint for creating objects.
+
+==============================================
+Problem statement
+What is an object in python?
+
+ANS: An object is an instance of a class.
+
+==============================================
+Problem statement
+Which operator in python is used to access properties and methods of an object?
+
+ANS: .
+
+==============================================
+Problem statement
+What does the "self" parameter represent in Python class methods?
+
+ANS: It refers to the current object instance.
+
+==============================================
+Problem statement
+Which of the following is a valid use of the "self" parameter in a class method?
+
+ANS: self.attribute_name
+
+==============================================
+Problem statement
+In an online shopping cart application written in Python, you are tasked with modeling the items in a customer's shopping cart. Each item has attributes such as name, price, and quantity. Which type of attributes are these that belong to individual items in the cart, and how would you refer to them in Python?
+
+ANS: Object attributes, accessed using the instance name.
+
+==============================================
+Problem statement
+In an online banking application, which access modifier should be used for the "account_balance" attribute to keep it private and secure?
+
+ANS: Private
+
+==============================================
+Problem statement
+What will be the output of following code?
+
+class Student:
+     name = “Rohan”
+     age = 16
+s1 = Student()
+s2 = Student()
+print(s1.name,end=” “)
+print(s2.name,end=” “)
+
+ANS: Rohan Rohan
+
+==============================================
+Problem statement
+What will be the output of following code?
+
+class Student:
+    name = “Parikh”
+    def store_details(self):
+        self.age = 60
+    def print_details(self):
+        print(self.name, end=” ”)
+        print(self.age)
+s = Student()
+s.store_details()
+s.print_details()
+
+ANS: Parikh 60
+
+==============================================
+Problem statement
+What will be the output of following code?
+
+class Student:
+    name = “Parikh”
+    def store_details(self):
+        self.age = 60
+    def print_age(self):
+        print(self.age)
+s = Student()
+s.store_details()
+s1 = Student()
+s1.print_age()
+
+ANS: Error
+
+==============================================
+Problem statement
+You are designing a class to represent a "Student" with attributes like name and age. Which OOP concept allows you to initialize these attributes when a new student object is created?
+
+ANS: Constructor
+
+==============================================
+Problem statement
+In a Python program that manages database connections, you want to ensure that database connections are closed and resources are released when objects go out of scope. Which OOP concept can help you achieve this?
+
+ANS: Destructor
+
+==============================================
+Problem statement
+In a Python web application framework, you want to create a custom authentication system. Which OOP concept would be most useful for applying authentication checks to specific web routes or views?
+
+ANS: Decorator
+
+==============================================
+Problem statement
+In a scientific calculator application, you want to create utility functions that don't depend on specific calculator instances but are related to mathematical operations. Which OOP concept can be used to define such methods?
+
+ANS: Static method
+
+===============================================
+Problem statement
+What will be the output of following code?
+
+class Student:
+
+    def __init__(self,name,age):
+        self.name = “Rohan”
+        self.age = 20
+
+    def print_student_details():
+        print(self.name, end= “ “)
+        print(self.age)
+
+
+s = Student()
+s.print_student_details()
+
+ANS: Error
+
+===============================================
+Problem statement
+What will be the output of the following code?
+
+class Student:
+    def __init__(self,name,age):
+        self.name = 'Rohan'
+        self.age = 20
+
+    def print_student_details():
+        print(self.name, end= " ")
+        print(self.age)
+s = Student('Parikh',25)
+s.print_student_details()
+
+ANS: Error
+
+===============================================
+Problem statement
+In a retail point-of-sale system, you need to calculate total sales and track inventory for all products, regardless of the individual store instances. Which of the following would be the most suitable object-oriented programming method for these global operations?
+
+ANS: Class methods
+
+===============================================
