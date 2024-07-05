@@ -1,0 +1,290 @@
+Problem statement
+What is the purpose of Inheritance in Python?
+
+ANS: To create new classes based on existing classes
+
+================================
+Problem statement
+What will be the output of following code?
+
+class Vehicle:
+     def __init__(self,color):
+         self.color = color
+class Car(Vehicle):
+     def __init__(self,color,numGears):
+         self.numGears = numGears
+c= Car(“black”,5)
+print(c.color)
+
+
+ANS: Error
+
+================================
+Problem statement
+class Shape:
+           def __init__(self, x, y):
+                self.x = x
+                self.y = y
+           def area(self):
+                pass
+
+class Rectangle(Shape):
+           def __init__(self, x, y, width, height):
+                super().__init__(x, y)
+                self.width = width
+                self.height = height
+           def area(self):
+                return self.width * self.height
+
+rect = Rectangle(0, 0, 5, 10)
+print(rect.area())
+
+
+ANS: 50
+
+================================
+Problem statement
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Employee(Person):
+    def __init__(self, name, age, salary):
+        super().__init__(name, age)
+        self.salary = salary
+
+    def get_info(self):
+        print("Name: " + self.name)
+        print("Age: " + str(self.age))
+        print("Salary: " + str(self.salary))
+
+emp = Employee("Nancy", 25, 500000)
+emp.get_info()
+
+
+ANS: Name: Nancy Age: 25 Salary: 500000
+
+================================
+Problem statement
+class Base:
+    def __init__(self):
+        self._protected_var = 5
+
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+
+class SubDerived(Derived):
+    def __init__(self):
+        Derived.__init__(self)
+
+obj = SubDerived()
+print(obj._protected_var)
+
+
+ANS: 5
+
+================================
+Problem statement
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f"{self.name} is {self.age} years old."
+    
+person = Person("Prachi", 30)
+print(person)
+
+
+
+ANS: 'Prachi is 30 years old.'
+
+================================
+Problem statement
+What will be the output of following code?
+
+class Vehicle:
+     def __init__(self,color):
+         self.__color = color
+class Car(Vehicle):
+    def __init__(self,color,numGears):
+        super().__init__(color)
+        self.numGears = numGears
+    def printCar(self):
+        print(c.__color,end=" ")
+        print(c.numGears)
+c = Car(“black”,5)
+c.printCar()
+
+
+ANS: Error
+
+================================
+Problem statement
+What type of inheritance is used in the below code snippet?
+class A:
+    def __init__(self):
+        self.a = 10
+        
+    def method_A(self):
+        print("This is method A of class A")
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+        self.b = 20
+        
+    def method_B(self):
+        print("This is method B of class B")
+
+class C:
+    def __init__(self):
+        self.c = 30
+        
+    def method_C(self):
+        print("This is method C of class C")
+
+class D(B, C):
+    def __init__(self):
+        super().__init__()
+        self.d = 40
+        
+    def method_D(self):
+        print("This is method D of class D")
+
+
+
+ANS: Multiple inheritance
+
+================================
+Problem statement
+What will be the output of following code?
+
+class Vehicle:
+    def __init__(self,color):
+        self.color = color
+class Car(Vehicle):
+    def __init__(self,color,numGears):
+        super().__init__(color)
+        self.numGears = numGears
+c= Car(“black”,5)
+print(c.color)
+
+
+ANS: black
+
+================================
+Problem statement
+What will be the output of following code?
+
+class A:
+
+    def __init__(self):
+        print(“init of A called”)
+class B:
+    def __init__(self):
+        print(“init of B called”)
+
+class C(B,A):
+    def __init__(self):
+        super().__init__()
+
+c = C()
+
+
+ANS: init of B called
+
+================================
+Problem statement
+class X: 
+      pass
+class Y: 
+      pass
+class Z:
+      pass
+class A(X,Y):
+      pass
+class B(Y,Z):
+      pass
+class C(B,A,Y):
+      pass
+What will be the Method Resolution Order of C?
+
+
+ANS: C>B>A>X>Y>Z
+
+================================
+Problem statement
+What will be the output of following code?
+
+class Vehicle:
+    def __init__(self,color):
+        self.color = color
+    def print(self):
+        print(c.color,end=””)
+class Car(Vehicle):
+    def __init__(self,color,numGears):
+        super().__init__(color)
+        self.numGears = numGears
+    def print(self):
+        self.print()
+        print(c.numGears)
+c = Car(“black”,5)
+c.print()
+
+
+ANS: Recursion error
+
+================================
+Problem statement
+Which of the following operators can be overloaded in python?
+
+
+ANS: All of the above
+
+================================
+Problem statement
+class Animal:
+    def sound(self):
+        print("An animal makes a sound")
+
+class Dog(Animal):
+    def sound(self):
+        super().sound()
+        print("A dog barks")
+
+a = Animal()
+d = Dog()
+a.sound()
+d.sound()
+
+
+
+ANS: An animal makes a sound, An animal makes a sound, A dog barks
+
+================================
+Problem statement
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+c = Circle(5)
+print(c.area())
+
+
+
+ANS: 78.5
+
+================================
