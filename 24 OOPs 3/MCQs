@@ -1,0 +1,135 @@
+Problem statement
+What is the primary difference between a syntax error and an exception error in Python?
+
+ANS: Syntax errors are caused by invalid code structure, while exception errors occur at runtime due to unforseen situations.
+
+======================================
+Problem statement
+What will be the output of following code?
+
+try:
+    a = 10
+    b = 0
+    c = a/b
+    print(c)
+except ValueError:
+    print(“Exception occured”)
+
+
+ANS: ZerDivisionError
+
+======================================
+Problem statement
+What will be the output of following code?
+
+try:
+    a = 10
+    b = 0
+    c = a/b
+    print(c)
+except ZeroDivisionError:
+    print(“Exception occured”)
+
+
+ANS: Exception occured
+
+======================================
+Problem statement
+What will be the output of following code?
+
+try:
+    a = 10
+    b = 0
+    print(d)
+    c = a/b
+except NameError:
+    print('Name Error occured')
+except ZeroDivisionError:
+    print('Zero Division Error occured')
+
+
+ANS: Name Error occured
+
+======================================
+Problem statement
+What will be the output of following code?
+
+class ZeroDenominatorError(Exception):
+    pass
+try:
+    a = 10
+    b = 0
+    if(b==0):
+        raise ZeroDenominatorError() 
+    c = a/b
+except ZeroDivisionError:
+    print('Zero Division Error occured')
+
+
+ANS: Error - ZeroDenominatorError
+
+======================================
+Problem statement
+What will be the output of following code?
+
+class ZeroDenominatorError(ZeroDivisionError):
+    pass
+try:
+    a = 10
+    b = 0
+    if(b==0):
+        raise ZeroDenominatorError()
+    c = a/b
+except ZeroDivisionError:
+    print('Zero Division Error occured')
+except ZeroDenominatorError:
+    print('Zero Denominator Error occured')
+
+
+ANS: Zer Division Error occured
+
+======================================
+Problem statement
+What wil be the output of following code?
+
+class ZeroDenominatorError(ZeroDivisionError):
+    pass
+try:
+    a = 10
+    b = 0
+    if(b==0):
+        raise ZeroDenominatorError()
+    c = a/b
+except ZeroDivisionError:
+    print('Zero Division Error occured',end= ‘ ‘)
+except ZeroDenominatorError:
+    print('Zero Denominator Error occured',end = ‘ ‘)
+else:
+    print(‘else works’)
+
+
+ANS: Zero Division Error occured
+
+======================================
+Problem statement
+What wil be the output of following code?
+
+class ZeroDenominatorError(ZeroDivisionError):
+    pass
+try:
+    a = 10
+    b = 5
+    if(b==0):
+        raise ZeroDenominatorError()
+    c = a/b
+except ZeroDivisionError:
+    print('Zero Division Error occured',end= ‘ ‘)
+except ZeroDenominatorError:
+    print('Zero Denominator Error occured',end = ‘ ‘)
+else:
+    print(‘else works’)
+
+
+ANS: else works
+
+======================================
